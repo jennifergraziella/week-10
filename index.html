@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Jerine Green — Katalog Online Tanaman Sukulen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Toko -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40">
+            <circle cx="24" cy="24" r="22" fill="#E6EFE9" stroke="#2D5A43" stroke-width="2"/>
+            <path d="M24 10 C28 16, 28 24, 24 30 C20 24, 20 16, 24 10 Z" fill="#2D5A43"/>
+            <path d="M13 18 C19 18, 23 23, 24 30 C17 29, 13 24, 13 18 Z" fill="#4E8566"/>
+            <path d="M35 18 C29 18, 25 23, 24 30 C31 29, 35 24, 35 18 Z" fill="#4E8566"/>
+            <path d="M16 30 L32 30 L30 38 L18 38 Z" fill="#C97352"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-name">Jerine Green</h1>
+          <p class="brand-tagline">Katalog Koleksi Tanaman Sukulen &amp; Kaktus Hias</p>
+        </div>
+      </div>
+
+      <div class="store-meta">
+        <div class="meta-item">
+          <span class="meta-label">Lokasi Kebun</span>
+          <span class="meta-value">Gubeng, Surabaya</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Jam Operasional</span>
+          <span class="meta-value">Setiap Hari, 08.00 – 17.00 WIB</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner Pengenalan Katalog -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Edisi Katalog Musim Ini</span>
+          <h2 class="hero-title">Keindahan Tanaman Sukulen untuk Meja &amp; Sudut Ruangan Anda</h2>
+          <p class="hero-description">
+            Seluruh tanaman dalam katalog ini dirawat langsung di dataran tinggi dengan media tanam porous pilihan, 
+            dikirim lengkap bersama pot terakota bernapas alami agar siap mempercantik hunian Anda.
+          </p>
+          <div class="hero-highlights">
+            <div class="highlight-box">
+              <strong>23 Varietas Pilihan</strong>
+              <span>Sehat &amp; berakar kuat</span>
+            </div>
+            <div class="highlight-box">
+              <strong>Pot Terakota Asli</strong>
+              <span>Lengkap dengan batu hias</span>
+            </div>
+            <div class="highlight-box">
+              <strong>Perawatan Mudah</strong>
+              <span>Cocok untuk pemula &amp; kolektor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daftar Katalog Produk -->
+    <section class="catalog-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Daftar Katalog Sukulen</h2>
+            <p class="section-subtitle">Menampilkan seluruh koleksi tanaman sukulen dan kaktus lengkap dengan spesifikasi ukuran pot, pencahayaan, dan harga.</p>
+          </div>
+          <div class="catalog-summary" id="catalog-count">
+            <!-- Diisi otomatis oleh script.js -->
+          </div>
+        </div>
+
+        <!-- Grid Produk (Diisi otomatis oleh script.js) -->
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- Informasi Singkat Perawatan -->
+    <section class="care-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Panduan Dasar Perawatan</h2>
+            <p class="section-subtitle">Ringkasan perawatan agar sukulen dan kaktus tetap segar, padat, dan berwarna cerah.</p>
+          </div>
+        </div>
+
+        <div class="care-grid">
+          <article class="care-card">
+            <div class="care-number">01</div>
+            <h3 class="care-title">Pencahayaan Cukup</h3>
+            <p class="care-text">
+              Letakkan sukulen di area dengan cahaya matahari terang selama 4–6 jam per hari, seperti di dekat jendela atau teras yang teduh dari hujan langsung.
+            </p>
+          </article>
+
+          <article class="care-card">
+            <div class="care-number">02</div>
+            <h3 class="care-title">Penyiraman Terukur</h3>
+            <p class="care-text">
+              Siram hanya ketika media tanam sudah benar-benar kering. Hindari air menggenang di pot agar akar tanaman tidak mudah membusuk.
+            </p>
+          </article>
+
+          <article class="care-card">
+            <div class="care-number">03</div>
+            <h3 class="care-title">Media Tanam Porous</h3>
+            <p class="care-text">
+              Gunakan campuran pasir malang, batu apung (pumice), sekam bakar, dan sedikit kompos agar air cepat mengalir dan akar bernapas optimal.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <h3 class="footer-brand">Jerine Green</h3>
+        <p class="footer-address">
+          Jl. Ngagel Jaya Tengah No.73-77, Baratajaya, Kec. Gubeng, Surabaya, Jawa Timur 60284
+        </p>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Kontak Katalog:</strong> jerinegreen@jerine.id</p>
+        <p><strong>Telepon / WhatsApp:</strong> +62 821-7593-3535</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p id="copyright-text">&copy; Jerine Green. Katalog Online Tanaman Sukulen.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
