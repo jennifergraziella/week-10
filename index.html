@@ -1,152 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Jerine Green — Katalog Online Tanaman Sukulen</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jerine Green — Katalog Modern Tanaman Sukulen &amp; Kaktus</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
-
-  <!-- Header Toko -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="brand-icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" width="40" height="40">
-            <circle cx="24" cy="24" r="22" fill="#E6EFE9" stroke="#2D5A43" stroke-width="2"/>
-            <path d="M24 10 C28 16, 28 24, 24 30 C20 24, 20 16, 24 10 Z" fill="#2D5A43"/>
-            <path d="M13 18 C19 18, 23 23, 24 30 C17 29, 13 24, 13 18 Z" fill="#4E8566"/>
-            <path d="M35 18 C29 18, 25 23, 24 30 C31 29, 35 24, 35 18 Z" fill="#4E8566"/>
-            <path d="M16 30 L32 30 L30 38 L18 38 Z" fill="#C97352"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <h1 class="brand-name">Jerine Green</h1>
-          <p class="brand-tagline">Katalog Koleksi Tanaman Sukulen &amp; Kaktus Hias</p>
-        </div>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span>Kebun Surabaya: +62 821-7593-3535</span>
       </div>
+      <div class="top-bar-center">
+        <span>Katalog Resmi 100 Varietas Sukulen &amp; Kaktus —
+          <strong class="top-highlight">Lengkap dengan Pot Terakota</strong></span>
+      </div>
+      <div class="top-bar-right" aria-hidden="true">
+        <span class="social-dot">IG</span>
+        <span class="social-dot">WA</span>
+        <span class="social-dot">YT</span>
+      </div>
+    </div>
+  </div>
 
-      <div class="store-meta">
-        <div class="meta-item">
-          <span class="meta-label">Lokasi Kebun</span>
-          <span class="meta-value">Gubeng, Surabaya</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Jam Operasional</span>
-          <span class="meta-value">Setiap Hari, 08.00 – 17.00 WIB</span>
+  <!-- Main Header & Navigation -->
+  <header class="site-header" id="atas">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+          <div class="brand-logo">
+            <img src="images/logo-jerine-green.png" alt="Jerine Green Logo" class="brand-logo-img">
+          </div>
+          <span class="brand-name">Jerine Green</span>
+      </a>
+
+      <nav class="main-nav" id="top-nav" aria-label="Navigasi Kategori">
+        <!-- Diisi otomatis oleh script.js -->
+      </nav>
+
+      <div class="header-badge">
+        <span class="catalog-tag">Katalog 2026</span>
+        <div class="header-icons" aria-hidden="true">
+          <span class="icon-btn" title="Cari">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </span>
+          <span class="icon-btn" title="Favorit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </span>
+          <span class="icon-btn" title="Keranjang">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+          </span>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- Banner Pengenalan Katalog -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <span class="hero-eyebrow">Edisi Katalog Musim Ini</span>
-          <h2 class="hero-title">Keindahan Tanaman Sukulen untuk Meja &amp; Sudut Ruangan Anda</h2>
-          <p class="hero-description">
-            Seluruh tanaman dalam katalog ini dirawat langsung di dataran tinggi dengan media tanam porous pilihan, 
-            dikirim lengkap bersama pot terakota bernapas alami agar siap mempercantik hunian Anda.
+  <!-- Category Ticker / Marquee Strip -->
+  <div class="ticker-strip" aria-hidden="true">
+    <div class="ticker-track" id="ticker-track">
+      <!-- Diisi otomatis oleh script.js -->
+    </div>
+  </div>
+
+  <!-- Konten Utama (Beranda / Halaman Kategori / Halaman Detail Produk) -->
+  <main id="main-content"></main>
+
+  <!-- Strip Keunggulan Layanan (Seperti bagian bawah referensi) -->
+  <section class="features-strip">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+            <line x1="12" y1="22.08" x2="12" y2="12" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Packing Aman Berlapis</h3>
+          <p class="feature-desc">
+            Dikemas khusus agar tanaman &amp; pot tetap utuh
           </p>
-          <div class="hero-highlights">
-            <div class="highlight-box">
-              <strong>23 Varietas Pilihan</strong>
-              <span>Sehat &amp; berakar kuat</span>
-            </div>
-            <div class="highlight-box">
-              <strong>Pot Terakota Asli</strong>
-              <span>Lengkap dengan batu hias</span>
-            </div>
-            <div class="highlight-box">
-              <strong>Perawatan Mudah</strong>
-              <span>Cocok untuk pemula &amp; kolektor</span>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Daftar Katalog Produk -->
-    <section class="catalog-section">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">Daftar Katalog Sukulen</h2>
-            <p class="section-subtitle">Menampilkan seluruh koleksi tanaman sukulen dan kaktus lengkap dengan spesifikasi ukuran pot, pencahayaan, dan harga.</p>
-          </div>
-          <div class="catalog-summary" id="catalog-count">
-            <!-- Diisi otomatis oleh script.js -->
-          </div>
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <polyline points="9 12 11 14 15 10" />
+          </svg>
         </div>
-
-        <!-- Grid Produk (Diisi otomatis oleh script.js) -->
-        <div class="product-grid" id="product-grid"></div>
-      </div>
-    </section>
-
-    <!-- Informasi Singkat Perawatan -->
-    <section class="care-section">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">Panduan Dasar Perawatan</h2>
-            <p class="section-subtitle">Ringkasan perawatan agar sukulen dan kaktus tetap segar, padat, dan berwarna cerah.</p>
-          </div>
-        </div>
-
-        <div class="care-grid">
-          <article class="care-card">
-            <div class="care-number">01</div>
-            <h3 class="care-title">Pencahayaan Cukup</h3>
-            <p class="care-text">
-              Letakkan sukulen di area dengan cahaya matahari terang selama 4–6 jam per hari, seperti di dekat jendela atau teras yang teduh dari hujan langsung.
-            </p>
-          </article>
-
-          <article class="care-card">
-            <div class="care-number">02</div>
-            <h3 class="care-title">Penyiraman Terukur</h3>
-            <p class="care-text">
-              Siram hanya ketika media tanam sudah benar-benar kering. Hindari air menggenang di pot agar akar tanaman tidak mudah membusuk.
-            </p>
-          </article>
-
-          <article class="care-card">
-            <div class="care-number">03</div>
-            <h3 class="care-title">Media Tanam Porous</h3>
-            <p class="care-text">
-              Gunakan campuran pasir malang, batu apung (pumice), sekam bakar, dan sedikit kompos agar air cepat mengalir dan akar bernapas optimal.
-            </p>
-          </article>
+        <div>
+          <h3 class="feature-title">Tanaman Sehat Terawat</h3>
+          <p class="feature-desc">Berakar kuat langsung dari kebun Lembang</p>
         </div>
       </div>
-    </section>
-  </main>
+
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+            <line x1="12" y1="17" x2="12.01" y2="17" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Panduan Perawatan</h3>
+          <p class="feature-desc">
+            Informasi cahaya &amp; siram tersedia di tiap produk
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-info">
-        <h3 class="footer-brand">Jerine Green</h3>
-        <p class="footer-address">
+      <div>
+        <div class="footer-brand">Jerine Green</div>
+        <p class="footer-text">
           Jl. Ngagel Jaya Tengah No.73-77, Baratajaya, Kec. Gubeng, Surabaya, Jawa Timur 60284
         </p>
       </div>
-      <div class="footer-contact">
-        <p><strong>Kontak Katalog:</strong> jerinegreen@jerine.id</p>
-        <p><strong>Telepon / WhatsApp:</strong> +62 821-7593-3535</p>
+      <div class="footer-right">
+        <p class="footer-text">
+          <strong>Email Katalog:</strong> jerinegreen@gmail.com
+        </p>
+        <p class="footer-text">
+          <strong>Jam Kebun:</strong> Setiap Hari, 08.00 – 17.00 WIB
+        </p>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p id="copyright-text">&copy; Jerine Green. Katalog Online Tanaman Sukulen.</p>
+        <p id="copyright-text">
+          &copy; Jerine Green. Katalog Tanaman Sukulen &amp; Kaktus.
+        </p>
       </div>
     </div>
   </footer>
-
 </body>
+
 </html>
