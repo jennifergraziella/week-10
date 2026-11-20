@@ -36,94 +36,824 @@
     { id: "Kolom & Hutan", nama: "Kolom & Hutan", sub: "San Pedro, Euphorbia, Kaktus Natal", icon: "park" }
   ];
 
-  /* >>> GANTI / TEMPELKAN ARRAY 100 VARIETAS ANDA DI RAW_PRODUCTS INI <<< */
+  /* >>> 100 VARIETAS LENGKAP — GAMBAR DISESUAIKAN DENGAN FOLDER IMAGES <<< */
   var RAW_PRODUCTS = [
+
+    /* ---- KATEGORI 1: ROSET (Echeveria, Graptoveria, Sempervivum) ---- */
     {
-      id: "echeveria-blue-bird", nama: "Echeveria Blue Bird", latin: "Echeveria imbricata 'Blue Bird'",
+      id: "aeonium-arboreum-zwartkop", nama: "Aeonium Zwartkop Black Rose", latin: "Aeonium arboreum 'Zwartkop'",
+      kategori: "Roset", hargaNum: 55000, hargaLamaNum: 70000, pot: "Pot 12 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 820, stok: 7, flashSale: false, badge: "Dark Beauty",
+      gambar: "images/category-1/aeonium-arboreum-zwartkop.jpg",
+      deskripsi: "Roset dramatis berwarna ungu kehitaman dengan batang tegak berkayu. Sangat menawan sebagai tanaman pot indoor maupun outdoor."
+    },
+    {
+      id: "aeonium-haworthii-kiwi", nama: "Aeonium Haworthii Kiwi", latin: "Aeonium haworthii 'Kiwi'",
+      kategori: "Roset", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 640, stok: 9, flashSale: false, badge: "Tricolor",
+      gambar: "images/category-1/aeonium-haworthii-kiwi.jpg",
+      deskripsi: "Roset tricolor cantik dengan gradasi hijau, kuning, dan tepi merah muda yang semakin intens di bawah sinar matahari penuh."
+    },
+    {
+      id: "dudleya-brittonii", nama: "Dudleya Brittonii Silver", latin: "Dudleya brittonii",
+      kategori: "Roset", hargaNum: 85000, hargaLamaNum: 110000, pot: "Pot 12 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 310, stok: 4, flashSale: false, badge: "Langka & Premium",
+      gambar: "images/category-1/dudleya-brittonii.jpg",
+      deskripsi: "Sukulen silver asli Baja California dengan lapisan farina putih perak tebal seperti bedak. Salah satu koleksi paling langka."
+    },
+    {
+      id: "echeveria-agavoides", nama: "Echeveria Agavoides Lipstik", latin: "Echeveria agavoides",
+      kategori: "Roset", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 1120, stok: 11, flashSale: true, badge: "Best Seller",
+      gambar: "images/category-1/echeveria-agavoides.jpg",
+      deskripsi: "Roset kompak berdaun tebal runcing dengan tepi merah cerah bak lipstik. Sangat populer untuk dekorasi meja kerja."
+    },
+    {
+      id: "echeveria-black-prince", nama: "Echeveria Black Prince", latin: "Echeveria 'Black Prince'",
+      kategori: "Roset", hargaNum: 42000, hargaLamaNum: 55000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 950, stok: 8, flashSale: true, badge: "Dark Series",
+      gambar: "images/category-1/echeveria-black-prince.jpg",
+      deskripsi: "Roset elegan berwarna ungu gelap hampir hitam dengan rosette daun segitiga yang rapat dan simetris."
+    },
+    {
+      id: "echeveria-chroma", nama: "Echeveria Chroma Pelangi", latin: "Echeveria 'Chroma'",
+      kategori: "Roset", hargaNum: 48000, hargaLamaNum: 62000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 780, stok: 6, flashSale: false, badge: "Warna-Warni",
+      gambar: "images/category-1/echeveria-chroma.jpg",
+      deskripsi: "Sukulen roset hibrida dengan gradasi warna spektakuler dari hijau ke merah muda dan ungu yang semakin cantik saat stress warna."
+    },
+    {
+      id: "echeveria-elegans", nama: "Echeveria Elegans Mexican Snowball", latin: "Echeveria elegans",
+      kategori: "Roset", hargaNum: 28000, hargaLamaNum: 36000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 2200, stok: 20, flashSale: false, badge: "Klasik Favorit",
+      gambar: "images/category-1/echeveria-elegans.jpg",
+      deskripsi: "Roset putih kebiruan bercahaya dengan tepi semi transparan. Koleksi klasik yang cocok untuk pemula dan kolektor."
+    },
+    {
+      id: "echeveria-laui", nama: "Echeveria Laui Lilac Blush", latin: "Echeveria laui",
+      kategori: "Roset", hargaNum: 65000, hargaLamaNum: 85000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 430, stok: 5, flashSale: false, badge: "Premium Rare",
+      gambar: "images/category-1/echeveria-laui.jpg",
+      deskripsi: "Sukulen roset pucat lavender berbedak tebal dengan warna ungu lembut yang sangat fotogenik dan diminati kolektor."
+    },
+    {
+      id: "echeveria-lilacina", nama: "Echeveria Lilacina Ghost", latin: "Echeveria lilacina",
+      kategori: "Roset", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 580, stok: 7, flashSale: false, badge: "Pastel Series",
+      gambar: "images/category-1/echeveria-lilacina.jpg",
+      deskripsi: "Roset pucat keunguan dengan farina pekat yang membuatnya tampak seperti ghost sukulen. Sangat menawan di cahaya matahari."
+    },
+    {
+      id: "echeveria-perle-von-nurnberg", nama: "Echeveria Perle von Nürnberg", latin: "Echeveria 'Perle von Nürnberg'",
+      kategori: "Roset", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 1650, stok: 12, flashSale: true, badge: "Top Rated",
+      gambar: "images/category-1/echeveria-perle-von-nurnberg.jpg",
+      deskripsi: "Hibrida roset terpopuler dengan warna ungu perlak memukau. Peringkat teratas koleksi Echeveria di dunia."
+    },
+    {
+      id: "echeveria-pulidonis", nama: "Echeveria Pulidonis Red Edge", latin: "Echeveria pulidonis",
       kategori: "Roset", hargaNum: 35000, hargaLamaNum: 45000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
       siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
-      rating: 4.9, terjual: 1420, stok: 5, flashSale: true, badge: "Best Seller",
-      gambar: "", deskripsi: "Roset simetris dengan lapisan farina putih kebiruan dan semburat merah muda di ujung daun."
+      rating: 4.8, terjual: 870, stok: 10, flashSale: false, badge: "Red Tip",
+      gambar: "images/category-1/echeveria-pulidonis.jpg",
+      deskripsi: "Roset kompak hijau kebiruan dengan tepi merah cerah yang semakin tajam saat terkena sinar matahari penuh."
     },
     {
-      id: "echeveria-lola", nama: "Echeveria Lola Lilac", latin: "Echeveria 'Lola'",
-      kategori: "Roset", hargaNum: 28500, hargaLamaNum: 38000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      id: "echeveria-runyonii-topsy-turvy", nama: "Echeveria Runyonii Topsy Turvy", latin: "Echeveria runyonii 'Topsy Turvy'",
+      kategori: "Roset", hargaNum: 38000, hargaLamaNum: 48000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
       siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
-      rating: 4.9, terjual: 980, stok: 8, flashSale: true, badge: "Pastel Series",
-      gambar: "", deskripsi: "Sukulen roset berwarna pastel lavender lembut yang populer untuk meja kerja."
+      rating: 4.9, terjual: 720, stok: 9, flashSale: false, badge: "Unik & Langka",
+      gambar: "images/category-1/echeveria-runyonii-topsy-turvy.jpg",
+      deskripsi: "Roset unik dengan daun melengkung ke bawah seperti terbalik, menciptakan tampilan tiga dimensi yang sangat menarik."
     },
     {
-      id: "haworthia-fasciata", nama: "Haworthia Fasciata Zebra", latin: "Haworthiopsis fasciata",
-      kategori: "Mini & Berpola", hargaNum: 28000, hargaLamaNum: 35000, pot: "Pot 8 cm", cahaya: "Indoor",
-      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot keramik",
-      rating: 4.9, terjual: 1850, stok: 14, flashSale: false, badge: "Low-Light Friendly",
-      gambar: "", deskripsi: "Tanaman meja tangguh dengan garis belang putih tegas, ideal untuk ruangan ber-AC."
+      id: "echeveria-setosa", nama: "Echeveria Setosa Mexican Firecracker", latin: "Echeveria setosa",
+      kategori: "Roset", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 540, stok: 14, flashSale: false, badge: "Berbulu Halus",
+      gambar: "images/category-1/echeveria-setosa.jpg",
+      deskripsi: "Roset ditutupi bulu-bulu halus putih lembut yang membuatnya terasa seperti beludru. Berbunga orange-kuning spektakuler."
     },
     {
-      id: "haworthia-cooperi", nama: "Haworthia Cooperi Kristal", latin: "Haworthia cooperi var. truncata",
-      kategori: "Mini & Berpola", hargaNum: 35000, hargaLamaNum: 50000, pot: "Pot 8 cm", cahaya: "Indoor",
+      id: "graptopetalum-amethystinum", nama: "Graptopetalum Amethystinum Lavender Pebbles", latin: "Graptopetalum amethystinum",
+      kategori: "Roset", hargaNum: 52000, hargaLamaNum: 68000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 490, stok: 8, flashSale: false, badge: "Lavender Series",
+      gambar: "images/category-1/graptopetalum-amethystinum.jpg",
+      deskripsi: "Sukulen berbentuk bulat gemuk berwarna lavender keabu-abuan mirip kerikil batu permata ungu. Sangat unik dan kolektibel."
+    },
+    {
+      id: "graptopetalum-paraguayense", nama: "Graptopetalum Paraguayense Ghost Plant", latin: "Graptopetalum paraguayense",
+      kategori: "Roset", hargaNum: 28000, hargaLamaNum: 35000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.7, terjual: 1080, stok: 18, flashSale: false, badge: "Tahan Banting",
+      gambar: "images/category-1/graptopetalum-paraguayense.jpg",
+      deskripsi: "Sukulen roset pucat abu-abu ungu yang sangat mudah tumbuh dan beranak. Cocok untuk pemula karena sangat toleran."
+    },
+    {
+      id: "graptoveria-debbi", nama: "Graptoveria Debbi Amethyst Blush", latin: "×Graptoveria 'Debbi'",
+      kategori: "Roset", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 760, stok: 7, flashSale: false, badge: "Pastel Cantik",
+      gambar: "images/category-1/graptoveria-debbi.jpg",
+      deskripsi: "Hibrida roset cantik dengan warna pink keunguan yang menawan. Daun gemuk berlapiskan farina tipis keperakan."
+    },
+    {
+      id: "graptoveria-opalina", nama: "Graptoveria Opalina Peach Opal", latin: "×Graptoveria 'Opalina'",
+      kategori: "Roset", hargaNum: 42000, hargaLamaNum: 55000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 680, stok: 9, flashSale: false, badge: "Opal Series",
+      gambar: "images/category-1/graptoveria-opalina.jpg",
+      deskripsi: "Roset menawan berwarna peach hingga pink opal tergantung cahaya. Daun membulat sempurna dan berkilau indah."
+    },
+    {
+      id: "pachyveria-scheideckeri", nama: "Pachyveria Scheideckeri Silver", latin: "×Pachyveria scheideckeri",
+      kategori: "Roset", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 420, stok: 11, flashSale: false, badge: "Silver Dust",
+      gambar: "images/category-1/pachyveria-scheideckeri.jpg",
+      deskripsi: "Sukulen hibrida berbentuk bintang simetris dengan daun putih kebiruan berlapiskan bedak silver. Tampilan elegan minimalis."
+    },
+    {
+      id: "sempervivum-arachnoideum", nama: "Sempervivum Arachnoideum Cobweb", latin: "Sempervivum arachnoideum",
+      kategori: "Roset", hargaNum: 35000, hargaLamaNum: 45000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 580, stok: 10, flashSale: false, badge: "Jaring Laba-laba",
+      gambar: "images/category-1/sempervivum-arachnoideum.jpg",
+      deskripsi: "Sempervivum unik dengan benang-benang putih mirip sarang laba-laba yang menutupi rosette merah kehijauan."
+    },
+    {
+      id: "sempervivum-tectorum", nama: "Sempervivum Tectorum Hen & Chicks", latin: "Sempervivum tectorum",
+      kategori: "Roset", hargaNum: 32000, hargaLamaNum: 40000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 920, stok: 15, flashSale: false, badge: "Beranak Lebat",
+      gambar: "images/category-1/sempervivum-tectorum.jpg",
+      deskripsi: "Sukulen roset klasik yang sangat tahan banting, cepat beranak, dan berubah warna merah di musim kering."
+    },
+
+    /* ---- KATEGORI 2: MINI & BERPOLA (Haworthia, Gasteria, Aloe Mini) ---- */
+    {
+      id: "aloe-aristata", nama: "Aloe Aristata Lace Aloe", latin: "Aloe aristata",
+      kategori: "Mini & Berpola", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 760, stok: 12, flashSale: false, badge: "Indoor Favorit",
+      gambar: "images/category-2/aloe-aristata.jpg",
+      deskripsi: "Aloe mungil berbintik putih rapat dengan tepi bergigi halus mirip renda. Sangat cocok untuk meja indoor tanpa paparan langsung."
+    },
+    {
+      id: "aloe-brevifolia", nama: "Aloe Brevifolia Short-Leaf Aloe", latin: "Aloe brevifolia",
+      kategori: "Mini & Berpola", hargaNum: 28000, hargaLamaNum: 36000, pot: "Pot 8 cm", cahaya: "Sinar Terang",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.7, terjual: 580, stok: 14, flashSale: false, badge: "Mini Kompak",
+      gambar: "images/category-2/aloe-brevifolia.jpg",
+      deskripsi: "Aloe mini kompak dengan daun biru-hijau berbintik putih dan tepi berduri halus. Beranak cepat membentuk rumpun padat."
+    },
+    {
+      id: "aloe-juvenna", nama: "Aloe Juvenna Tiger Tooth Aloe", latin: "Aloe juvenna",
+      kategori: "Mini & Berpola", hargaNum: 35000, hargaLamaNum: 45000, pot: "Pot 8 cm", cahaya: "Sinar Terang",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 490, stok: 11, flashSale: false, badge: "Tiger Tooth",
+      gambar: "images/category-2/aloe-juvenna.jpg",
+      deskripsi: "Aloe mini kolonial hijau tua berbintik putih dengan duri tepi mirip gigi harimau. Memerah cantik di bawah sinar penuh."
+    },
+    {
+      id: "aloe-pink-blush", nama: "Aloe Pink Blush", latin: "Aloe 'Pink Blush'",
+      kategori: "Mini & Berpola", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 620, stok: 8, flashSale: false, badge: "Blush Pink",
+      gambar: "images/category-2/aloe-pink-blush.jpg",
+      deskripsi: "Aloe hibrida cantik dengan bercak putih dan tepi kemerahan. Sangat menawan saat terkena cahaya dan mudah dirawat."
+    },
+    {
+      id: "gasteraloe-flow", nama: "Gasteraloe Flow Green Ice", latin: "×Gasteraloe 'Flow'",
+      kategori: "Mini & Berpola", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 540, stok: 9, flashSale: false, badge: "Green Ice",
+      gambar: "images/category-2/gasteraloe-flow.jpg",
+      deskripsi: "Hibrida Gasteria dan Aloe dengan bercak putih melimpah di daun hijau tua tebal. Sangat toleran sinar rendah."
+    },
+    {
+      id: "gasteria-bicolor-var-liliputana", nama: "Gasteria Liliputana Dwarf", latin: "Gasteria bicolor var. liliputana",
+      kategori: "Mini & Berpola", hargaNum: 42000, hargaLamaNum: 55000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 380, stok: 7, flashSale: false, badge: "Super Mini",
+      gambar: "images/category-2/gasteria-bicolor-var-liliputana.jpg",
+      deskripsi: "Gasteria terkecil — hanya 5 cm! Daun tebal berpola bintik putih menakjubkan. Cocok untuk terrarium dan koleksi mini."
+    },
+    {
+      id: "gasteria-carinata-var-verrucosa", nama: "Gasteria Verrucosa Warty Aloe", latin: "Gasteria carinata var. verrucosa",
+      kategori: "Mini & Berpola", hargaNum: 35000, hargaLamaNum: 45000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 410, stok: 10, flashSale: false, badge: "Bertekstur Kutil",
+      gambar: "images/category-2/gasteria-carinata-var-verrucosa.jpg",
+      deskripsi: "Gasteria dengan tekstur tonjolan putih seperti kutil tersebar rapi di seluruh permukaan daun. Unik dan tahan di tempat gelap."
+    },
+    {
+      id: "haworthia-cooperi-var-truncata", nama: "Haworthia Cooperi Kristal Jendela", latin: "Haworthia cooperi var. truncata",
+      kategori: "Mini & Berpola", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 8 cm", cahaya: "Indoor",
       siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
       rating: 4.9, terjual: 1120, stok: 5, flashSale: true, badge: "Koleksi Kristal",
-      gambar: "", deskripsi: "Daun membulat tembus cahaya menyerupai butiran permata hijau bening."
+      gambar: "images/category-2/haworthia-cooperi-var-truncata.jpg",
+      deskripsi: "Daun bulat tembus cahaya menyerupai permata hijau bening. Ujung daun transparan memantulkan cahaya seperti kristal air."
     },
     {
-      id: "string-of-pearls", nama: "String of Pearls Gantung", latin: "Curio rowleyanus",
-      kategori: "Gantung", hargaNum: 38500, hargaLamaNum: 59000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
-      siram: "6–8 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
-      rating: 4.8, terjual: 870, stok: 6, flashSale: true, badge: "Untaian Lebat",
-      gambar: "", deskripsi: "Sukulen menjuntai unik dengan daun bulat menyerupai manik-manik mutiara hijau."
+      id: "haworthia-cymbiformis", nama: "Haworthia Cymbiformis Cathedral Window", latin: "Haworthia cymbiformis",
+      kategori: "Mini & Berpola", hargaNum: 38000, hargaLamaNum: 48000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 680, stok: 12, flashSale: false, badge: "Jendela Kristal",
+      gambar: "images/category-2/haworthia-cymbiformis.jpg",
+      deskripsi: "Sukulen mini dengan ujung daun transparan tembus cahaya yang memantulkan sinar bak jendela katedral. Sangat menawan."
     },
     {
-      id: "sedum-morganianum", nama: "Sedum Morganianum (Donkey's Tail)", latin: "Sedum morganianum",
+      id: "haworthia-maughanii", nama: "Haworthia Maughanii Truncated Haworthia", latin: "Haworthia maughanii",
+      kategori: "Mini & Berpola", hargaNum: 85000, hargaLamaNum: 110000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "10–14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 280, stok: 4, flashSale: false, badge: "Premium Kolektor",
+      gambar: "images/category-2/haworthia-maughanii.jpg",
+      deskripsi: "Haworthia langka dengan daun silindris terpotong rata di ujung bak jendela mini. Salah satu haworthia paling dicari kolektor."
+    },
+    {
+      id: "haworthia-retusa", nama: "Haworthia Retusa Star Cactus", latin: "Haworthia retusa",
+      kategori: "Mini & Berpola", hargaNum: 42000, hargaLamaNum: 55000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 490, stok: 9, flashSale: false, badge: "Star Shape",
+      gambar: "images/category-2/haworthia-retusa.jpg",
+      deskripsi: "Roset bintang dengan daun melebar dan ujung transparan berpola garis hijau indah. Tampak seperti bintang laut dari kaca."
+    },
+    {
+      id: "haworthia-truncata", nama: "Haworthia Truncata Window Haworthia", latin: "Haworthia truncata",
+      kategori: "Mini & Berpola", hargaNum: 95000, hargaLamaNum: 125000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "10–14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 210, stok: 3, flashSale: false, badge: "Koleksi Langka",
+      gambar: "images/category-2/haworthia-truncata.jpg",
+      deskripsi: "Haworthia sangat langka dengan daun horizontal terpotong rata dan jendela transparan berpola retikular yang menakjubkan."
+    },
+    {
+      id: "haworthiopsis-attenuata", nama: "Haworthiopsis Attenuata Zebra Mini", latin: "Haworthiopsis attenuata",
+      kategori: "Mini & Berpola", hargaNum: 25000, hargaLamaNum: 32000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot keramik",
+      rating: 4.8, terjual: 2100, stok: 25, flashSale: false, badge: "Pemula Friendly",
+      gambar: "images/category-2/haworthiopsis-attenuata.jpg",
+      deskripsi: "Sukulen mini berbintik putih pada permukaan daun hijau tua. Sangat mudah dirawat dan beranak cepat. Pilihan terbaik pemula."
+    },
+    {
+      id: "haworthiopsis-fasciata", nama: "Haworthiopsis Fasciata Zebra Plant", latin: "Haworthiopsis fasciata",
+      kategori: "Mini & Berpola", hargaNum: 28000, hargaLamaNum: 35000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot keramik",
+      rating: 4.9, terjual: 1850, stok: 14, flashSale: true, badge: "Low-Light Friendly",
+      gambar: "images/category-2/haworthiopsis-fasciata.jpg",
+      deskripsi: "Tanaman meja tangguh dengan garis belang putih tegas di luar daun. Ideal untuk ruangan ber-AC dan meja kantor."
+    },
+    {
+      id: "haworthiopsis-limifolia", nama: "Haworthiopsis Limifolia Fairy Washboard", latin: "Haworthiopsis limifolia",
+      kategori: "Mini & Berpola", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 580, stok: 11, flashSale: false, badge: "Tekstur Unik",
+      gambar: "images/category-2/haworthiopsis-limifolia.jpg",
+      deskripsi: "Haworthia berdaun bergalur horizontal rapi seperti papan cuci. Pola tekstur uniknya sangat populer di kalangan kolektor."
+    },
+
+    /* ---- KATEGORI 3: GANTUNG (Ceropegia, Senecio, Sedum Menjuntai) ---- */
+    {
+      id: "ceropegia-woodii", nama: "Ceropegia Woodii String of Hearts", latin: "Ceropegia woodii",
+      kategori: "Gantung", hargaNum: 42000, hargaLamaNum: 55000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 1480, stok: 8, flashSale: true, badge: "String of Hearts",
+      gambar: "images/category-3/ceropegia-woodii.jpg",
+      deskripsi: "Sukulen menjuntai romantis dengan daun berbentuk hati berpola batik hijau-ungu di sulur panjang keunguan."
+    },
+    {
+      id: "ceropegia-woodii-variegata", nama: "Ceropegia Woodii Variegata Pink Hearts", latin: "Ceropegia woodii 'Variegata'",
+      kategori: "Gantung", hargaNum: 65000, hargaLamaNum: 85000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 5.0, terjual: 620, stok: 5, flashSale: false, badge: "Variegata Pink",
+      gambar: "images/category-3/ceropegia-woodii-variegata.jpg",
+      deskripsi: "Versi variegata langka dengan daun hati bergradasi pink-krem-hijau. Lebih jarang dan lebih cantik dari versi standar."
+    },
+    {
+      id: "crassula-pellucida-variegata", nama: "Crassula Pellucida Calico Kitten", latin: "Crassula pellucida 'Variegata'",
+      kategori: "Gantung", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 740, stok: 10, flashSale: false, badge: "Calico Kitten",
+      gambar: "images/category-3/crassula-pellucida-variegata.jpg",
+      deskripsi: "Sukulen menjuntai cantik dengan daun hati mini berwarna krem-pink-hijau. Sangat menawan dalam pot gantung."
+    },
+    {
+      id: "crassula-perforata", nama: "Crassula Perforata String of Buttons", latin: "Crassula perforata",
+      kategori: "Gantung", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot gantung",
+      rating: 4.8, terjual: 580, stok: 13, flashSale: false, badge: "String of Buttons",
+      gambar: "images/category-3/crassula-perforata.jpg",
+      deskripsi: "Sukulen batang spiral dengan pasang-dua daun yang saling memeluk batang seperti kancing bersusun indah."
+    },
+    {
+      id: "othonna-capensis", nama: "Othonna Capensis Ruby Necklace", latin: "Othonna capensis",
+      kategori: "Gantung", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 820, stok: 7, flashSale: false, badge: "Ruby Necklace",
+      gambar: "images/category-3/othonna-capensis.jpg",
+      deskripsi: "Sukulen menjuntai spektakuler dengan daun silindris merah rubi di batang ungu tua. Berbunga kuning cantik."
+    },
+    {
+      id: "peperomia-prostrata", nama: "Peperomia Prostrata String of Turtles", latin: "Peperomia prostrata",
+      kategori: "Gantung", hargaNum: 48000, hargaLamaNum: 62000, pot: "Pot 10 cm", cahaya: "Indoor",
+      siram: "7–10 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 960, stok: 6, flashSale: false, badge: "String of Turtles",
+      gambar: "images/category-3/peperomia-prostrata.jpg",
+      deskripsi: "Sukulen mini langka berbentuk kura-kura mungil dengan pola urat daun mirip cangkang penyu. Sangat populer di kalangan kolektor."
+    },
+    {
+      id: "sedum-adolphi", nama: "Sedum Adolphi Golden Glow", latin: "Sedum adolphi",
+      kategori: "Gantung", hargaNum: 28000, hargaLamaNum: 36000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.7, terjual: 540, stok: 16, flashSale: false, badge: "Golden Glow",
+      gambar: "images/category-3/sedum-adolphi.jpg",
+      deskripsi: "Sedum kompak dengan daun kuning-oranye bercahaya di ujung batang tegak. Memerah cantik saat terkena stress cahaya."
+    },
+    {
+      id: "sedum-burrito", nama: "Sedum Burrito Baby Donkey's Tail", latin: "Sedum burrito",
+      kategori: "Gantung", hargaNum: 35000, hargaLamaNum: 45000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.8, terjual: 870, stok: 10, flashSale: false, badge: "Baby Donkey Tail",
+      gambar: "images/category-3/sedum-burrito.jpg",
+      deskripsi: "Versi mini Donkey's Tail dengan daun lebih bulat gemuk dan lebih padat. Menjuntai indah dari pot tinggi."
+    },
+    {
+      id: "sedum-makinoi-ogon", nama: "Sedum Makinoi Ogon Golden", latin: "Sedum makinoi 'Ogon'",
+      kategori: "Gantung", hargaNum: 25000, hargaLamaNum: 32000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot gantung",
+      rating: 4.7, terjual: 460, stok: 20, flashSale: false, badge: "Ground Cover",
+      gambar: "images/category-3/sedum-makinoi-ogon.jpg",
+      deskripsi: "Sedum menjalar dengan daun bulat kecil berwarna kuning keemasan cerah. Cocok sebagai penutup tanah pot atau pot gantung."
+    },
+    {
+      id: "sedum-morganianum", nama: "Sedum Morganianum Donkey's Tail", latin: "Sedum morganianum",
       kategori: "Gantung", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
       siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
-      rating: 5.0, terjual: 2100, stok: 12, flashSale: false, badge: "Rimbun Alami",
-      gambar: "", deskripsi: "Untaian daun tebal menyerupai kepang hijau mint yang memukau di rak tinggi."
+      rating: 5.0, terjual: 2100, stok: 12, flashSale: true, badge: "Rimbun Alami",
+      gambar: "images/category-3/sedum-morganianum.jpg",
+      deskripsi: "Untaian daun tebal menyerupai kepang hijau mint yang memukau di rak tinggi. Tanaman gantung paling populer di kebun."
     },
     {
-      id: "lithops-mix", nama: "Lithops Living Stones Mix 3", latin: "Lithops lesliei & karasmontana",
-      kategori: "Batu & Unik", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
-      siram: "14 hari sekali", level: "Kolektor", asal: "Kebun Surabaya", satuan: "/ pot isi 3 bulb",
-      rating: 4.9, terjual: 980, stok: 9, flashSale: false, badge: "Tanaman Batu",
-      gambar: "", deskripsi: "Sukulen mimikri batu gurun dengan corak alami eksotis dan siram sangat jarang."
+      id: "sedum-rubrotinctum", nama: "Sedum Rubrotinctum Jelly Bean", latin: "Sedum rubrotinctum",
+      kategori: "Gantung", hargaNum: 28000, hargaLamaNum: 36000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 980, stok: 18, flashSale: false, badge: "Jelly Bean",
+      gambar: "images/category-3/sedum-rubrotinctum.jpg",
+      deskripsi: "Sukulen berbentuk permen jelly kecil-kecil berwarna hijau kemerahan. Daun mudah rontok namun menjadi bibit baru."
     },
     {
-      id: "cotyledon-tomentosa", nama: "Cotyledon Bear's Paw", latin: "Cotyledon tomentosa",
+      id: "senecio-herreanus", nama: "Senecio Herreanus String of Watermelons", latin: "Senecio herreanus",
+      kategori: "Gantung", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 650, stok: 7, flashSale: false, badge: "Watermelon String",
+      gambar: "images/category-3/senecio-herreanus.jpg",
+      deskripsi: "Sukulen menjuntai dengan daun lonjong bergaris seperti semangka mini. Lebih tahan dibanding String of Pearls."
+    },
+    {
+      id: "senecio-peregrinus", nama: "Senecio Peregrinus String of Dolphins", latin: "Senecio peregrinus",
+      kategori: "Gantung", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 5.0, terjual: 780, stok: 5, flashSale: false, badge: "String of Dolphins",
+      gambar: "images/category-3/senecio-peregrinus.jpg",
+      deskripsi: "Sukulen paling menggemaskan — daun berbentuk lumba-lumba kecil melompat berjejer di sepanjang sulur menjuntai."
+    },
+    {
+      id: "senecio-radicans", nama: "Senecio Radicans String of Bananas", latin: "Senecio radicans",
+      kategori: "Gantung", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot gantung",
+      rating: 4.8, terjual: 540, stok: 11, flashSale: false, badge: "String of Bananas",
+      gambar: "images/category-3/senecio-radicans.jpg",
+      deskripsi: "Sukulen menjuntai dengan daun melengkung mirip pisang kecil-kecil. Lebih tahan kering dari String of Pearls."
+    },
+    {
+      id: "senecio-rowleyanus", nama: "Senecio Rowleyanus String of Pearls", latin: "Senecio rowleyanus",
+      kategori: "Gantung", hargaNum: 38500, hargaLamaNum: 59000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "6–8 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.8, terjual: 870, stok: 6, flashSale: true, badge: "Untaian Mutiara",
+      gambar: "images/category-3/senecio-rowleyanus.jpg",
+      deskripsi: "Sukulen menjuntai ikonik dengan daun bulat menyerupai manik-manik mutiara hijau yang sangat populer."
+    },
+
+    /* ---- KATEGORI 4: BATU & UNIK (Lithops, Crassula, Cotyledon) ---- */
+    {
+      id: "conophytum-bilobum", nama: "Conophytum Bilobum Living Buttons", latin: "Conophytum bilobum",
+      kategori: "Batu & Unik", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "14–21 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 310, stok: 6, flashSale: false, badge: "Living Buttons",
+      gambar: "images/category-4/conophytum-bilobum.jpg",
+      deskripsi: "Sukulen mini mirip tombol batu dengan celah di tengah. Berbunga ungu atau putih dari celah daunnya yang unik."
+    },
+    {
+      id: "cotyledon-tomentosa", nama: "Cotyledon Tomentosa Bear's Paw", latin: "Cotyledon tomentosa",
       kategori: "Batu & Unik", hargaNum: 42000, hargaLamaNum: 50000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
       siram: "7 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot keramik",
       rating: 4.9, terjual: 760, stok: 7, flashSale: false, badge: "Favorit Kolektor",
-      gambar: "", deskripsi: "Daun berbulu lembut menyerupai telapak beruang mungil bercakar merah."
+      gambar: "images/category-4/cotyledon-tomentosa.jpg",
+      deskripsi: "Daun berbulu lembut menyerupai telapak beruang mungil bercakar merah. Sangat menggemaskan dan populer."
     },
     {
-      id: "astrophytum-myriostigma", nama: "Astrophytum Myriostigma", latin: "Astrophytum myriostigma",
+      id: "crassula-capitella-campfire", nama: "Crassula Capitella Campfire", latin: "Crassula capitella 'Campfire'",
+      kategori: "Batu & Unik", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 620, stok: 14, flashSale: false, badge: "Api Merah",
+      gambar: "images/category-4/crassula-capitella-campfire.jpg",
+      deskripsi: "Sukulen merah menyala seperti api unggun saat terkena sinar penuh. Warna hijau berubah dramatis menjadi merah-oranye."
+    },
+    {
+      id: "crassula-muscosa", nama: "Crassula Muscosa Watch Chain", latin: "Crassula muscosa",
+      kategori: "Batu & Unik", hargaNum: 25000, hargaLamaNum: 32000, pot: "Pot 8 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.7, terjual: 480, stok: 20, flashSale: false, badge: "Watch Chain",
+      gambar: "images/category-4/crassula-muscosa.jpg",
+      deskripsi: "Sukulen batang berlapis daun kecil rapat seperti rantai jam saku. Sangat unik dan mudah dirawat."
+    },
+    {
+      id: "crassula-ovata", nama: "Crassula Ovata Jade Plant", latin: "Crassula ovata",
+      kategori: "Batu & Unik", hargaNum: 35000, hargaLamaNum: 45000, pot: "Pot 12 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 1650, stok: 20, flashSale: false, badge: "Money Tree",
+      gambar: "images/category-4/crassula-ovata.jpg",
+      deskripsi: "Tanaman jade populer sebagai simbol keberuntungan dengan batang berkayu dan daun oval mengkilap hijau tua."
+    },
+    {
+      id: "crassula-ovata-gollum", nama: "Crassula Ovata Gollum Jade", latin: "Crassula ovata 'Gollum'",
+      kategori: "Batu & Unik", hargaNum: 45000, hargaLamaNum: 60000, pot: "Pot 12 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 820, stok: 10, flashSale: false, badge: "Gollum Edition",
+      gambar: "images/category-4/crassula-ovata-gollum.jpg",
+      deskripsi: "Jade dengan daun berbentuk tabung berlubang di ujung seperti corong. Ujung daun memerah cantik di bawah sinar penuh."
+    },
+    {
+      id: "fenestraria-rhopalophylla", nama: "Fenestraria Rhopalophylla Baby Toes", latin: "Fenestraria rhopalophylla",
+      kategori: "Batu & Unik", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 380, stok: 6, flashSale: false, badge: "Baby Toes",
+      gambar: "images/category-4/fenestraria-rhopalophylla.jpg",
+      deskripsi: "Sukulen berbentuk jari bayi mungil berujung kaca transparan bak jendela untuk menyerap cahaya dari bawah tanah."
+    },
+    {
+      id: "kalanchoe-tomentosa", nama: "Kalanchoe Tomentosa Panda Plant", latin: "Kalanchoe tomentosa",
+      kategori: "Batu & Unik", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 1240, stok: 15, flashSale: false, badge: "Panda Plant",
+      gambar: "images/category-4/kalanchoe-tomentosa.jpg",
+      deskripsi: "Sukulen berbulu lembut perak dengan bercak coklat di ujung daun menyerupai telinga panda yang lucu."
+    },
+    {
+      id: "lithops-aucampiae", nama: "Lithops Aucampiae Living Stone Brown", latin: "Lithops aucampiae",
+      kategori: "Batu & Unik", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "14–21 hari sekali", level: "Kolektor", asal: "Kebun Surabaya", satuan: "/ pot isi 2 bulb",
+      rating: 4.9, terjual: 480, stok: 8, flashSale: false, badge: "Living Stone",
+      gambar: "images/category-4/lithops-aucampiae.jpg",
+      deskripsi: "Lithops coklat kemerahan dengan pola urat gelap di permukaan. Sangat mirip batu asli, berbunga kuning di musim kering."
+    },
+    {
+      id: "lithops-karasmontana", nama: "Lithops Karasmontana Living Stone White", latin: "Lithops karasmontana",
+      kategori: "Batu & Unik", hargaNum: 48000, hargaLamaNum: 62000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "14–21 hari sekali", level: "Kolektor", asal: "Kebun Surabaya", satuan: "/ pot isi 2 bulb",
+      rating: 4.9, terjual: 390, stok: 7, flashSale: false, badge: "White Stone",
+      gambar: "images/category-4/lithops-karasmontana.jpg",
+      deskripsi: "Lithops putih keabu-abuan dengan pola retikular halus. Berbunga putih di antara kedua daunnya yang hampir menyatu."
+    },
+    {
+      id: "lithops-lesliei", nama: "Lithops Lesliei Living Stones Mix", latin: "Lithops lesliei",
+      kategori: "Batu & Unik", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "14 hari sekali", level: "Kolektor", asal: "Kebun Surabaya", satuan: "/ pot isi 3 bulb",
+      rating: 4.9, terjual: 980, stok: 9, flashSale: false, badge: "Tanaman Batu",
+      gambar: "images/category-4/lithops-lesliei.jpg",
+      deskripsi: "Sukulen mimikri batu gurun dengan corak alami eksotis dan siram sangat jarang. Koleksi wajib sukulentis."
+    },
+    {
+      id: "pleiospilos-nelii", nama: "Pleiospilos Nelii Split Rock", latin: "Pleiospilos nelii",
+      kategori: "Batu & Unik", hargaNum: 52000, hargaLamaNum: 68000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 320, stok: 7, flashSale: false, badge: "Split Rock",
+      gambar: "images/category-4/pleiospilos-nelii.jpg",
+      deskripsi: "Sukulen batu besar dengan 2-4 daun bulat abu-abu hijau menyerupai batu belah. Berbunga oranye-kuning spektakuler."
+    },
+    {
+      id: "portulacaria-afra", nama: "Portulacaria Afra Elephant Bush", latin: "Portulacaria afra",
+      kategori: "Batu & Unik", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 12 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 740, stok: 16, flashSale: false, badge: "Elephant Bush",
+      gambar: "images/category-4/portulacaria-afra.jpg",
+      deskripsi: "Sukulen batang merah dengan daun hijau kecil oval. Sangat populer untuk bonsai sukulen karena batangnya yang berkayu."
+    },
+    {
+      id: "portulacaria-afra-variegata", nama: "Portulacaria Afra Variegata Rainbow Elephant Bush", latin: "Portulacaria afra 'Variegata'",
+      kategori: "Batu & Unik", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 12 cm", cahaya: "Sinar Terang",
+      siram: "7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 580, stok: 10, flashSale: false, badge: "Rainbow Variegata",
+      gambar: "images/category-4/portulacaria-afra-variegata.jpg",
+      deskripsi: "Versi variegata dengan daun hijau berbatas putih-kuning. Batang merah marun dan daun tricolor menjadikannya sangat menawan."
+    },
+    {
+      id: "titanopsis-calcarea", nama: "Titanopsis Calcarea Jewel Plant", latin: "Titanopsis calcarea",
+      kategori: "Batu & Unik", hargaNum: 65000, hargaLamaNum: 85000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 240, stok: 5, flashSale: false, badge: "Jewel Plant",
+      gambar: "images/category-4/titanopsis-calcarea.jpg",
+      deskripsi: "Sukulen menyerupai bebatuan dengan ujung daun ditutupi tonjolan kalsium putih-oranye bak batu kapur permata."
+    },
+
+    /* ---- KATEGORI 5: KAKTUS BULAT (Astrophytum, Gymno, Mammillaria) ---- */
+    {
+      id: "astrophytum-asterias", nama: "Astrophytum Asterias Sand Dollar Cactus", latin: "Astrophytum asterias",
+      kategori: "Kaktus Bulat", hargaNum: 65000, hargaLamaNum: 85000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Kolektor", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 380, stok: 5, flashSale: false, badge: "Sand Dollar",
+      gambar: "images/category-5/astrophytum-asterias.jpg",
+      deskripsi: "Kaktus bulat pipih mirip koin bintang laut tanpa duri dengan bintik trikoma putih dan bunga kuning besar spektakuler."
+    },
+    {
+      id: "astrophytum-capricorne", nama: "Astrophytum Capricorne Mountain Cactus", latin: "Astrophytum capricorne",
+      kategori: "Kaktus Bulat", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 490, stok: 7, flashSale: false, badge: "Ram Horn Spines",
+      gambar: "images/category-5/astrophytum-capricorne.jpg",
+      deskripsi: "Kaktus bintang dengan duri panjang meliuk seperti tanduk kambing. Bintik putih rapat di seluruh badan berwarna kehijauan."
+    },
+    {
+      id: "astrophytum-myriostigma", nama: "Astrophytum Myriostigma Bishop's Cap", latin: "Astrophytum myriostigma",
       kategori: "Kaktus Bulat", hargaNum: 55000, hargaLamaNum: 65000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
       siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
       rating: 4.9, terjual: 640, stok: 6, flashSale: false, badge: "Koleksi Rare",
-      gambar: "", deskripsi: "Kaktus bintang lima simetris tanpa duri tajam dengan bintik trikoma putih."
+      gambar: "images/category-5/astrophytum-myriostigma.jpg",
+      deskripsi: "Kaktus bintang lima simetris tanpa duri tajam dengan bintik trikoma putih mewah. Koleksi favorit para kaktis."
     },
     {
-      id: "golden-barrel", nama: "Kaktus Golden Barrel Mas", latin: "Echinocactus grusonii",
+      id: "astrophytum-ornatum", nama: "Astrophytum Ornatum Star Cactus", latin: "Astrophytum ornatum",
+      kategori: "Kaktus Bulat", hargaNum: 48000, hargaLamaNum: 62000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 540, stok: 8, flashSale: false, badge: "Golden Spines",
+      gambar: "images/category-5/astrophytum-ornatum.jpg",
+      deskripsi: "Kaktus bintang berukuran lebih besar dengan duri keemasan panjang tegak dan ban trikoma putih horizontal yang rapi."
+    },
+    {
+      id: "coryphantha-elephantidens", nama: "Coryphantha Elephantidens Elephant Tooth", latin: "Coryphantha elephantidens",
+      kategori: "Kaktus Bulat", hargaNum: 65000, hargaLamaNum: 85000, pot: "Pot 12 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Menengah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 310, stok: 6, flashSale: false, badge: "Elephant Tooth",
+      gambar: "images/category-5/coryphantha-elephantidens.jpg",
+      deskripsi: "Kaktus bulat besar dengan tuberkle besar seperti gigi gajah dan duri tebal. Berbunga pink besar sangat menawan."
+    },
+    {
+      id: "echinocactus-grusonii", nama: "Echinocactus Grusonii Golden Barrel", latin: "Echinocactus grusonii",
       kategori: "Kaktus Bulat", hargaNum: 48000, hargaLamaNum: 80000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
       siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
       rating: 4.9, terjual: 1320, stok: 3, flashSale: true, badge: "Diskon Besar",
-      gambar: "", deskripsi: "Kaktus bulat klasik berduri keemasan rapi yang mempertegas estetika minimalis."
+      gambar: "images/category-5/echinocactus-grusonii.jpg",
+      deskripsi: "Kaktus bulat klasik berduri keemasan rapi menghiasi rusuk lurus. Ikon estetika minimalis yang timeless."
     },
     {
-      id: "san-pedro-kolom", nama: "Kaktus Kolom San Pedro", latin: "Trichocereus pachanoi",
-      kategori: "Kolom & Hutan", hargaNum: 75000, hargaLamaNum: 90000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
+      id: "ferocactus-latispinus", nama: "Ferocactus Latispinus Devil's Tongue", latin: "Ferocactus latispinus",
+      kategori: "Kaktus Bulat", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 12 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 420, stok: 8, flashSale: false, badge: "Devil's Tongue",
+      gambar: "images/category-5/ferocactus-latispinus.jpg",
+      deskripsi: "Kaktus barrel dramatis dengan duri merah-merah besar melingkar, termasuk satu duri terbesar melengkung ke bawah."
+    },
+    {
+      id: "frailea-castanea", nama: "Frailea Castanea Miniature Barrel", latin: "Frailea castanea",
+      kategori: "Kaktus Bulat", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 280, stok: 7, flashSale: false, badge: "Mini Langka",
+      gambar: "images/category-5/frailea-castanea.jpg",
+      deskripsi: "Kaktus barrel terkecil — hanya 3-5 cm! Berwarna coklat kehitaman dengan bintik kuning. Berbunga kleistogami tanpa membuka."
+    },
+    {
+      id: "gymnocalycium-baldianum", nama: "Gymnocalycium Baldianum Spider Cactus", latin: "Gymnocalycium baldianum",
+      kategori: "Kaktus Bulat", hargaNum: 38000, hargaLamaNum: 48000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 680, stok: 12, flashSale: false, badge: "Red Flower",
+      gambar: "images/category-5/gymnocalycium-baldianum.jpg",
+      deskripsi: "Kaktus bulat semi-flat dengan duri lurus dan bunga merah cerah kontras. Sangat mudah berbunga meski di dalam ruangan."
+    },
+    {
+      id: "gymnocalycium-horstii", nama: "Gymnocalycium Horstii Chin Cactus", latin: "Gymnocalycium horstii",
+      kategori: "Kaktus Bulat", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 410, stok: 9, flashSale: false, badge: "Pink Flower",
+      gambar: "images/category-5/gymnocalycium-horstii.jpg",
+      deskripsi: "Kaktus bulat besar bergalur lebar dengan duri melengkung dan bunga pink besar yang sering muncul di musim panas."
+    },
+    {
+      id: "gymnocalycium-mihanovichii", nama: "Gymnocalycium Mihanovichii Moon Cactus", latin: "Gymnocalycium mihanovichii",
+      kategori: "Kaktus Bulat", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 920, stok: 18, flashSale: false, badge: "Moon Cactus",
+      gambar: "images/category-5/gymnocalycium-mihanovichii.jpg",
+      deskripsi: "Kaktus mungil kokoh bertubuh hijau bergalur dengan bunga pink cerah yang sering muncul di pucuknya."
+    },
+    {
+      id: "gymnocalycium-mihanovichii-variegata", nama: "Gymnocalycium Mihanovichii Variegata Hibotan", latin: "Gymnocalycium mihanovichii 'Variegata'",
+      kategori: "Kaktus Bulat", hargaNum: 45000, hargaLamaNum: 60000, pot: "Pot 8 cm", cahaya: "Indoor",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 1480, stok: 10, flashSale: true, badge: "Moon Cactus Merah",
+      gambar: "images/category-5/gymnocalycium-mihanovichii-variegata.jpg",
+      deskripsi: "Kaktus Moon merah-oranye mencolok yang dicangkok di batang Hylocereus hijau. Sangat populer sebagai hadiah dan koleksi."
+    },
+    {
+      id: "mammillaria-bocasana", nama: "Mammillaria Bocasana Powder Puff Cactus", latin: "Mammillaria bocasana",
+      kategori: "Kaktus Bulat", hargaNum: 35000, hargaLamaNum: 45000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 760, stok: 14, flashSale: false, badge: "Powder Puff",
+      gambar: "images/category-5/mammillaria-bocasana.jpg",
+      deskripsi: "Kaktus berbulu halus putih seperti bola kapas lembut dengan bunga pink kecil melingkar di puncaknya."
+    },
+    {
+      id: "mammillaria-elongata", nama: "Mammillaria Elongata Ladyfinger Cactus", latin: "Mammillaria elongata",
+      kategori: "Kaktus Bulat", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 980, stok: 18, flashSale: false, badge: "Gold Lace",
+      gambar: "images/category-5/mammillaria-elongata.jpg",
+      deskripsi: "Kaktus silinder kecil berkoloni lebat berduri emas rapat seperti renda. Sangat mudah beranakpinak dan dekoratif."
+    },
+    {
+      id: "mammillaria-hahniana", nama: "Mammillaria Hahniana Old Lady Cactus", latin: "Mammillaria hahniana",
+      kategori: "Kaktus Bulat", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 620, stok: 11, flashSale: false, badge: "Old Lady",
+      gambar: "images/category-5/mammillaria-hahniana.jpg",
+      deskripsi: "Kaktus bulat diselimuti bulu putih panjang lembut seperti rambut nenek tua. Berbunga pink melingkar di puncaknya."
+    },
+    {
+      id: "mammillaria-plumosa", nama: "Mammillaria Plumosa Feather Cactus", latin: "Mammillaria plumosa",
+      kategori: "Kaktus Bulat", hargaNum: 42000, hargaLamaNum: 55000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 480, stok: 10, flashSale: false, badge: "Feather Cactus",
+      gambar: "images/category-5/mammillaria-plumosa.jpg",
+      deskripsi: "Kaktus paling lembut — duri berbentuk bulu halus putih menutup seluruh tubuhnya seperti bola kapas berbulu."
+    },
+    {
+      id: "melocactus-matanzanus", nama: "Melocactus Matanzanus Turk's Cap", latin: "Melocactus matanzanus",
+      kategori: "Kaktus Bulat", hargaNum: 75000, hargaLamaNum: 95000, pot: "Pot 12 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Kolektor", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 320, stok: 5, flashSale: false, badge: "Turk's Cap",
+      gambar: "images/category-5/melocactus-matanzanus.jpg",
+      deskripsi: "Kaktus langka dengan 'topi' cephalium merah-oranye muncul di puncaknya saat dewasa. Berbunga pink kecil dari cephaliumnya."
+    },
+    {
+      id: "parodia-leninghausii", nama: "Parodia Leninghausii Golden Tower Cactus", latin: "Parodia leninghausii",
+      kategori: "Kaktus Bulat", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 540, stok: 9, flashSale: false, badge: "Golden Tower",
+      gambar: "images/category-5/parodia-leninghausii.jpg",
+      deskripsi: "Kaktus silinder tertutup bulu emas lembut dan duri halus kuning keemasan. Berbunga kuning cerah besar di puncaknya."
+    },
+    {
+      id: "parodia-magnifica", nama: "Parodia Magnifica Balloon Cactus", latin: "Parodia magnifica",
+      kategori: "Kaktus Bulat", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 12 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 480, stok: 7, flashSale: false, badge: "Balloon Cactus",
+      gambar: "images/category-5/parodia-magnifica.jpg",
+      deskripsi: "Kaktus bulat biru-hijau berselimut duri halus putih keemasan dengan bunga kuning besar menghias puncaknya."
+    },
+    {
+      id: "rebutia-minuscula", nama: "Rebutia Minuscula Crown Cactus", latin: "Rebutia minuscula",
+      kategori: "Kaktus Bulat", hargaNum: 32000, hargaLamaNum: 42000, pot: "Pot 8 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 820, stok: 15, flashSale: false, badge: "Rajin Berbunga",
+      gambar: "images/category-5/rebutia-minuscula.jpg",
+      deskripsi: "Kaktus mungil yang berbunga lebat di musim semi dengan bunga merah-oranye mengelilingi pangkal tubuhnya. Sangat rajin berbunga."
+    },
+
+    /* ---- KATEGORI 6: KOLOM & HUTAN (Cereus, Opuntia, Rhipsalis, Schlumbergera) ---- */
+    {
+      id: "cephalocereus-senilis", nama: "Cephalocereus Senilis Old Man Cactus", latin: "Cephalocereus senilis",
+      kategori: "Kolom & Hutan", hargaNum: 85000, hargaLamaNum: 110000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
+      siram: "10–14 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ tinggi 25 cm",
+      rating: 4.9, terjual: 480, stok: 6, flashSale: false, badge: "Old Man",
+      gambar: "images/category-6/cephalocereus-senilis.jpg",
+      deskripsi: "Kaktus kolom tertutup rambut putih panjang lembut seperti kakek tua berjambang. Sangat unik dan menjadi statement plant."
+    },
+    {
+      id: "cereus-jamacaru", nama: "Cereus Jamacaru Mandacaru Column", latin: "Cereus jamacaru",
+      kategori: "Kolom & Hutan", hargaNum: 65000, hargaLamaNum: 85000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
       siram: "10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ tinggi 30 cm",
-      rating: 4.9, terjual: 640, stok: 10, flashSale: false, badge: "Statement Plant",
-      gambar: "", deskripsi: "Kaktus kolom arsitektural tinggi menjulang untuk sudut ruangan terang."
+      rating: 4.8, terjual: 540, stok: 8, flashSale: false, badge: "Kolom Klasik",
+      gambar: "images/category-6/cereus-jamacaru.jpg",
+      deskripsi: "Kaktus kolom bergalur biru-hijau dengan duri abu-abu panjang. Tumbuh cepat dan kokoh sebagai tanaman sudut ruangan."
     },
     {
-      id: "euphorbia-trigona", nama: "Euphorbia Trigona Royal Red", latin: "Euphorbia trigona f. rubra",
-      kategori: "Kolom & Hutan", hargaNum: 65000, hargaLamaNum: 80000, pot: "Pot 15 cm", cahaya: "Sinar Terang",
-      siram: "7–10 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ tinggi 35 cm",
-      rating: 4.9, terjual: 540, stok: 8, flashSale: false, badge: "Tahan Kering",
-      gambar: "", deskripsi: "Batang tegak bersegi tiga dengan gradasi hijau zaitun dan semburat marun."
+      id: "cereus-repandus-monstrose", nama: "Cereus Repandus Monstrose Spiral Cactus", latin: "Cereus repandus 'Monstrose'",
+      kategori: "Kolom & Hutan", hargaNum: 95000, hargaLamaNum: 125000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
+      siram: "10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ tinggi 25 cm",
+      rating: 5.0, terjual: 310, stok: 5, flashSale: false, badge: "Monstrose Spiral",
+      gambar: "images/category-6/cereus-repandus-monstrose.jpg",
+      deskripsi: "Mutasi unik Cereus dengan tubuh bergelombang tidak beraturan menciptakan bentuk pahatan 3D yang sangat artistik."
     },
     {
-      id: "media-porous-1kg", nama: "Media Tanam Porous 1kg", latin: "Pumice, Pasir Malang & Perlite",
+      id: "cleistocactus-strausii", nama: "Cleistocactus Strausii Silver Torch", latin: "Cleistocactus strausii",
+      kategori: "Kolom & Hutan", hargaNum: 75000, hargaLamaNum: 95000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
+      siram: "10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ tinggi 30 cm",
+      rating: 4.9, terjual: 420, stok: 7, flashSale: false, badge: "Silver Torch",
+      gambar: "images/category-6/cleistocactus-strausii.jpg",
+      deskripsi: "Kaktus kolom tertutup bulu-bulu putih halus rapat seperti pilar perak. Berbunga merah dari sisi batang yang sangat indah."
+    },
+    {
+      id: "epiphyllum-oxypetalum", nama: "Epiphyllum Oxypetalum Queen of the Night", latin: "Epiphyllum oxypetalum",
+      kategori: "Kolom & Hutan", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 15 cm", cahaya: "Indoor",
+      siram: "5–7 hari sekali", level: "Menengah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 680, stok: 9, flashSale: false, badge: "Queen of Night",
+      gambar: "images/category-6/epiphyllum-oxypetalum.jpg",
+      deskripsi: "Kaktus epifit berdaun pipih lebar yang berbunga putih raksasa harum di malam hari. Peristiwa mekar hanya semalam!"
+    },
+    {
+      id: "hatiora-gaertneri", nama: "Hatiora Gaertneri Easter Cactus", latin: "Hatiora gaertneri",
+      kategori: "Kolom & Hutan", hargaNum: 48000, hargaLamaNum: 62000, pot: "Pot 12 cm", cahaya: "Indoor",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.8, terjual: 540, stok: 10, flashSale: false, badge: "Easter Cactus",
+      gambar: "images/category-6/hatiora-gaertneri.jpg",
+      deskripsi: "Kaktus hutan tropis berdaun segmen menjuntai yang berbunga merah-oranye spektakuler. Sangat mudah berbunga indoor."
+    },
+    {
+      id: "myrtillocactus-geometrizans", nama: "Myrtillocactus Geometrizans Blue Candle", latin: "Myrtillocactus geometrizans",
+      kategori: "Kolom & Hutan", hargaNum: 85000, hargaLamaNum: 110000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
+      siram: "10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ tinggi 30 cm",
+      rating: 4.9, terjual: 360, stok: 6, flashSale: false, badge: "Blue Candle",
+      gambar: "images/category-6/myrtillocactus-geometrizans.jpg",
+      deskripsi: "Kaktus kolom kandelabra berwarna biru-hijau keabu-abuan yang tumbuh bercabang membentuk silhouette pohon cantik."
+    },
+    {
+      id: "opuntia-ficus-indica", nama: "Opuntia Ficus Indica Prickly Pear", latin: "Opuntia ficus-indica",
+      kategori: "Kolom & Hutan", hargaNum: 45000, hargaLamaNum: 58000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
+      siram: "10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.7, terjual: 580, stok: 15, flashSale: false, badge: "Prickly Pear",
+      gambar: "images/category-6/opuntia-ficus-indica.jpg",
+      deskripsi: "Kaktus padel ikonik dengan segmen oval lebar berduri halus glokhid. Berbunga kuning dan berbuah merah yang bisa dimakan."
+    },
+    {
+      id: "opuntia-microdasys", nama: "Opuntia Microdasys Bunny Ears Cactus", latin: "Opuntia microdasys",
+      kategori: "Kolom & Hutan", hargaNum: 38000, hargaLamaNum: 50000, pot: "Pot 12 cm", cahaya: "Sinar Penuh",
+      siram: "10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ pot terakota",
+      rating: 4.8, terjual: 920, stok: 14, flashSale: false, badge: "Bunny Ears",
+      gambar: "images/category-6/opuntia-microdasys.jpg",
+      deskripsi: "Kaktus padel mini berbentuk telinga kelinci lucu dengan bercak glokhid kuning atau putih. Sangat ikonik dan menggemaskan."
+    },
+    {
+      id: "opuntia-monacantha-variegata", nama: "Opuntia Monacantha Variegata Joseph's Coat", latin: "Opuntia monacantha 'Variegata'",
+      kategori: "Kolom & Hutan", hargaNum: 65000, hargaLamaNum: 85000, pot: "Pot 12 cm", cahaya: "Sinar Penuh",
+      siram: "10 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 4.9, terjual: 390, stok: 7, flashSale: false, badge: "Joseph's Coat",
+      gambar: "images/category-6/opuntia-monacantha-variegata.jpg",
+      deskripsi: "Kaktus padel variegata langka dengan warna padel putih-merah muda kontras sangat mencolok dan dekoratif."
+    },
+    {
+      id: "pilosocereus-pachycladus", nama: "Pilosocereus Pachycladus Blue Torch Cactus", latin: "Pilosocereus pachycladus",
+      kategori: "Kolom & Hutan", hargaNum: 95000, hargaLamaNum: 125000, pot: "Pot 15 cm", cahaya: "Sinar Penuh",
+      siram: "10 hari sekali", level: "Mudah", asal: "Kebun Surabaya", satuan: "/ tinggi 25 cm",
+      rating: 5.0, terjual: 280, stok: 4, flashSale: false, badge: "Blue Torch",
+      gambar: "images/category-6/pilosocereus-pachycladus.jpg",
+      deskripsi: "Kaktus kolom paling memukau berwarna biru-turquoise cerah alami dengan bulu putih di area areole. Sangat jarang dan premium."
+    },
+    {
+      id: "rhipsalis-baccifera", nama: "Rhipsalis Baccifera Mistletoe Cactus", latin: "Rhipsalis baccifera",
+      kategori: "Kolom & Hutan", hargaNum: 42000, hargaLamaNum: 55000, pot: "Pot 12 cm", cahaya: "Indoor",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.8, terjual: 740, stok: 11, flashSale: false, badge: "Mistletoe Cactus",
+      gambar: "images/category-6/rhipsalis-baccifera.jpg",
+      deskripsi: "Kaktus hutan epifit berdaun batang tipis menjuntai panjang. Sangat cocok untuk pot gantung indoor dengan cahaya rendah."
+    },
+    {
+      id: "schlumbergera-truncata", nama: "Schlumbergera Truncata Christmas Cactus", latin: "Schlumbergera truncata",
+      kategori: "Kolom & Hutan", hargaNum: 48000, hargaLamaNum: 62000, pot: "Pot 12 cm", cahaya: "Indoor",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 920, stok: 10, flashSale: false, badge: "Christmas Cactus",
+      gambar: "images/category-6/schlumbergera-truncata.jpg",
+      deskripsi: "Kaktus Natal ikonik yang berbunga merah-pink lebat menjelang akhir tahun. Sangat populer sebagai hadiah dan koleksi indoor."
+    },
+    {
+      id: "selenicereus-anthonyanus", nama: "Selenicereus Anthonyanus Fishbone Cactus", latin: "Selenicereus anthonyanus",
+      kategori: "Kolom & Hutan", hargaNum: 55000, hargaLamaNum: 72000, pot: "Pot 12 cm", cahaya: "Indoor",
+      siram: "5–7 hari sekali", level: "Mudah", asal: "Kebun Lembang", satuan: "/ pot gantung",
+      rating: 4.9, terjual: 680, stok: 8, flashSale: false, badge: "Fishbone Cactus",
+      gambar: "images/category-6/selenicereus-anthonyanus.jpg",
+      deskripsi: "Kaktus epifit berdaun bergigi zig-zag seperti tulang ikan yang menjuntai indah. Berbunga pink harum di malam hari."
+    },
+    {
+      id: "tephrocactus-geometricus", nama: "Tephrocactus Geometricus Paper Spine Cactus", latin: "Tephrocactus geometricus",
+      kategori: "Kolom & Hutan", hargaNum: 85000, hargaLamaNum: 110000, pot: "Pot 10 cm", cahaya: "Sinar Penuh",
+      siram: "14 hari sekali", level: "Kolektor", asal: "Kebun Lembang", satuan: "/ pot terakota",
+      rating: 5.0, terjual: 210, stok: 4, flashSale: false, badge: "Paper Spine",
+      gambar: "images/category-6/tephrocactus-geometricus.jpg",
+      deskripsi: "Kaktus paling aneh — segmen bola kecil berwarna merah muda berlapis duri berbentuk pipih lebar seperti kertas putih."
+    },
+
+    /* ---- AKSESORI & MEDIA TANAM ---- */
+    {
+      id: "media-porous-1kg", nama: "Media Tanam Porous 1 kg", latin: "Pumice, Pasir Malang & Perlite",
       kategori: "Roset", hargaNum: 15000, hargaLamaNum: 18000, pot: "Pot 10 cm", cahaya: "Sinar Terang",
       siram: "-", level: "Mudah", asal: "Formula Jerine", satuan: "/ kemasan 1 kg",
       rating: 5.0, terjual: 3200, stok: 40, flashSale: false, isAccessory: true, badge: "Wajib Punya",
